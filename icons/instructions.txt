@@ -1,0 +1,6 @@
+The password file will be saved under the temporary location because on some computers the c: drive is blocked.
+(Type %temp% in the adress bar and look for the file "proof.txt")
+
+(%temp%/proof.txt)
+
+youtube.com/zeroforcevideo
