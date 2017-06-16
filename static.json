@@ -1,7 +1,10 @@
 //static
 {
     "encoding": "US-ASCII"
-    "clean_urls": true
-      "https_only": true
-
+}
+{
+    "https_only": true
+}
+{
+   "clean_urls": true 
 }
