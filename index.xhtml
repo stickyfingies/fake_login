@@ -11,16 +11,17 @@ document.oncontextmenu=new Function("return false")
 // --> 
 </script> 
 <script>
-    function index() {
-        window.open("/index.html","_self");
+    function loading() {
+        window.open("/loading.xhtml","_self");
         
     }
     
     
 </script>
+
 <style>
 body {
-	background: url(' /bg.png'); 
+	background: url('/bg.png'); 
 	background-size: cover;
 	background-repeat: no-repeat;
     background-position: left top;
@@ -91,6 +92,12 @@ padding-bottom: 2px;
 height: 22px;
 }
 
+.next {
+position: absolute;
+top: 198;
+right:13%;
+}
+
 .shutdown {
 position: absolute;
 bottom: 17px;
@@ -98,16 +105,35 @@ right: 3%;
 margin: -5% 0 0 -25%;
 }
 
-.ok {
-	top: 198;
-	left:13%;
+.ease {
+position: absolute;
+bottom: 17px;
+left: 30%;
+margin: -5% 0 0 -25%;
 }
 
-.error {
-	font-size:13.5px;
+.domain {
+    font-size:13.5px;
     text-align: center;
     vertical-align:middle;
     margin-top: -7%;
+}
+
+.domainlog {
+    font-size:13.5px;
+    text-align: center;
+    vertical-align:middle;
+    margin-top: -3.6%;
+    text-decoration: underline;
+}
+
+.cancel {
+    margin-left:10px;
+}
+
+.next {
+    height:26;
+    width:26;
 }
 </style>
 
@@ -121,14 +147,25 @@ margin: -5% 0 0 -25%;
 <div style="display:block;position:absolute;min-width:100%; min-height:100%;margin:0;padding:0;">
 <div class="centeragain">
 <div class="CT">
+<img src=" /profile.png" draggable="false" ondragstart="return false;">
+<div class="logonelements">
+<input id="username" placeholder="User name"></input><br>
+<input id="password" type="Password" placeholder="Password"></input><br><br></div>
+<p class="domain"> Domain: ________</p>
+<p class="domainlog">How do I log into another domain?</p>
 <div class"logonelements">
-<p class="error">The username or password is incorrect.</p>
-<img class="ok" src=" /ok.png" onclick="index()" draggable="false" ondragstart="return false;" />
+<img class="cancel" src=" /cancel.png"   draggable="false" ondragstart="return false;" />
+<img class="next" src=" /next.png" onclick="loading()" draggable="false" ondragstart="return false;" />
+
 </div>
+
 <div class="image_block">
-<img src=" /windows.png" draggable="false" ondragstart="return false;">
+<img src=" /windows.png" draggable="false" ondragstart="return false;"/>
 </div>
 </div>
 </div>
+</div>
+<div class="ease">
+    <img src=" /ease_access.png" draggable="false" ondragstart="return false;" />
 </div>
 </body></html>
