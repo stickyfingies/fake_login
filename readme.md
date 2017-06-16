@@ -1,6 +1,6 @@
 # Fake Windows Login
 
-(BETA)
+(BETA - In Development)
 
 To start from bash:
 
