@@ -1,0 +1,102 @@
+<script type="text/javascript"> 
+var message="Sorry, right-click has been disabled"; 
+function clickIE() {if (document.all) {(message);return false;}} 
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) { 
+if (e.which==2||e.which==3) {(message);return false;}}} 
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
+document.oncontextmenu=new Function("return false") 
+// --> 
+</script> 
+
+<style>
+body {
+	background: url('/bg.png'); 
+	background-size: cover;
+	background-repeat: no-repeat;
+    background-position: left top;
+}
+
+.CT {
+vertical-align:middle;
+position: absolute;
+top: 38%;
+height: 70px;
+margin-left:auto;
+margin-right:auto;
+display:block;
+width:400px;
+margin-top: -5%;
+font-family:Segoe UI, Arial;
+font-size:23px;
+color:#fff;
+font-weight:normal;
+text-align:center;
+text-shadow: 0px 1px 5px rgba(0,0,0, 0.4);
+user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;
+}
+
+.image_block {
+    position:fixed;
+    bottom:17px;
+    left:38%;
+}
+
+p {
+display:block;
+float:middle;
+text-align:center;
+width:100%;tfe
+}
+
+.centeragain {
+width:400px;
+margin:0px auto;
+text-align:left;
+}
+
+
+#black {
+display:none;
+}
+
+.loading {
+	vertical-align:middle;
+	left:50%;
+}
+
+.welcome {
+	font-size:18px;
+    text-align: center;
+    vertical-align:middle;
+    display:inline;
+}
+</style>
+
+</head>
+<body marginwidth="0" marginheight="0">
+
+
+<!-- Image editor: www.online-image-editor.com -->
+<script>
+    var time;
+    time= setTimeout(function(){window.open("/error.html","_self");}, 4000);
+    
+</script>
+
+<div style="display:block;position:absolute;min-width:100%; min-height:100%;margin:0;padding:0;">
+<div class="centeragain">
+<div class="CT">
+
+<img class="loading" src=" /loading.gif"  draggable="false" ondragstart="return false;">
+<p class="welcome">Welcome</p>
+
+<div class="image_block">
+<img src=" /windows.png" draggable="false" ondragstart="return false;">
+</div>
+</div>
+</div>
+</div>
+</body></html>
