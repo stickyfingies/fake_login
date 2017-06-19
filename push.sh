@@ -1,3 +1,3 @@
 git add .
-git commit -m general_updates
+git commit -m privacy_update
 git push -f

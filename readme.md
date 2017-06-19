@@ -18,8 +18,9 @@ If you  are not connected to a domain please remove the following lines:
     154: <p class="domain"> Domain: _______</p>
     155: <p class="domainlog"> How do I log in to another domain?</p>
 
-For windows instalations where the red shutdown button is displayed, un-comment the following lines:
-
+For windows instalations where the red shutdown button is not displayed, comment the following lines:
+- /index.html:
+	172: <img src="/shutdown.png"  draggable="false" ondragstart="return false;" />
 
 
 For windows instalations with profile pictures please do the following:
