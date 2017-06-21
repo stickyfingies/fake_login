@@ -31,6 +31,7 @@ For windows instalations with profile pictures please do the following:
 
 To start from bash:
 
+
 $ /etc/init.d/apache2 start
 
 
