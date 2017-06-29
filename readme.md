@@ -41,6 +41,8 @@ To start from Bash:
 
 $ /etc/init.d/apache2 start
 
+FOr liscense see:
+- /Liscense.txt
 
 Origional Authors:
 - Nate Goldsborough     
