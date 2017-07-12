@@ -9,6 +9,7 @@ if (document.layers)
 else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;} 
 document.oncontextmenu=new Function("return false") 
 // --> 
+require('newrelic');
 </script> 
 <script>
     function loading() {
