@@ -1,0 +1,19 @@
+{
+  "name": "windows-7-spoof",
+  "version": "2.0.3",
+  "description": "BETA",
+  "main": "index.html",
+  "scripts": {
+    "test": "/etc/init.d/apache2 start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cellman1234/fake_login.git"
+  },
+  "author": "Nate Goldsborough",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cellman1234/fake_login/issues"
+  },
+  "homepage": "https://github.com/cellman1234/fake_login#readme"
+}
