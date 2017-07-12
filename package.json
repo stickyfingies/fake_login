@@ -1,7 +1,7 @@
 {
   "name": "windows-7-spoof",
   "version": "2.0.3",
-  "description": "BETA",
+  "description": "Spoof IN beta dev",
   "main": "index.html",
   "scripts": {
     "test": "/etc/init.d/apache2 start"
