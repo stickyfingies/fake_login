@@ -41,7 +41,13 @@ To start from Bash:
 
 $ /etc/init.d/apache2 start
 
-FOr liscense see:
+To deploy on heroku:
+- Set buildpack to php.
+- DO NOT modify the following files unless you know what you are doing:
+-    `/index.php`
+-    `/composer.json`
+
+For liscense see:
 - /Liscense.txt
 
 Origional Authors:
