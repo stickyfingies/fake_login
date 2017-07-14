@@ -1,7 +1,5 @@
 /icons
 bg.png
 .git
-/index.html
-/loading.html
-/error.html
-/favicon.ico
+*.html
+favicon.ico
