@@ -5,9 +5,9 @@
 
 
 For Windows instalations using a custom login background please navigate to the following local file path:
-- C:\\Windows\System 32\oobe\Info\Backgrounds
-Then upload the image named BackgroundDefault.jpeg to your root directory path.
-Then rename to bg.png
+- `C:\\Windows\System 32\oobe\Info\Backgrounds`
+Then upload the image named `BackgroundDefault.jpeg` to your root directory path.
+Then rename to `bg.png`
 
 For Windows instilations connected to a network domain please modify the folowing line:
 - /index.xhtml:
@@ -26,7 +26,7 @@ For windows instalations where the red shutdown button is not displayed, comment
 For windows instalations with profile pictures please do the following:
 - navigate to control pannel --> User Accounts and Family Safty --> User Accounts
 - Take a screen shot of that user picture and remove all whitespace and add a transparent background.
-- Then upload that image to your root directory and name it profile.png
+- Then upload that image to your root directory and name it `profile.png`
 
 To use HTTP POST change the following line to add your POST action:
 - /index.xhtml:
@@ -39,16 +39,16 @@ If you do not want HTTP POST then delete the following lines:
 
 To start from Bash:
 
-$ /etc/init.d/apache2 start
+- `$ /etc/init.d/apache2 start`
 
-To deploy on heroku:
+To deploy on Heroku:
 - Set buildpack to php.
 - DO NOT modify the following files unless you know what you are doing:
 -    `/index.php`
 -    `/composer.json`
 
 For liscense see:
-- /Liscense.txt
+- `/Liscense.txt`
 
 Origional Authors:
 - Nate Goldsborough     
