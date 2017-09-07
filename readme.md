@@ -48,7 +48,7 @@ To deploy on Heroku:
 -    `/composer.json`
 
 For liscense see:
-- `/Liscense.txt`
+- `/liscense.txt`
 
 Origional Authors:
 - Nate Goldsborough     
